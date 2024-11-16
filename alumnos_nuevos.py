@@ -51,4 +51,29 @@ class Escuela:
         alumno["Tutor"] = input(f"Tutor ({alumno['Tutor']}): ") or alumno["Tutor"]
         print("Datos modificados con éxito.")
 
+    def expulsar_alumno(datos):
+        if not datos["Alumnos"]:
+            print("No hay alumnos registrados.")
+            return
+        for i, alumno in enumerate(datos["Alumnos"]):
+            print(f"{i+1}. {alumno['Nombre']} {alumno['Apellido']}")
+        opcion = int(input("Ingrese el número del alumno que desea expulsar: ")) - 1
+        if opcion < 0 or opcion >= len(datos["Alumnos"]):
+            print("Opción inválida.")
+            return
+        del datos["Alumnos"][opcion]
+        print("Alumno expulsado con éxito.")
 
+def main():
+    datos = {}
+    Escuela.__init__(datos)
+    while True:
+        print("1. Agregar alumno")
+        print("2. Mostrar datos de alumnos")
+        print("3. Modificar datos de alumno")
+        print("4. Expulsar alumno")
+        print("5. Salir")
+        opcion = input("Ingrese una opción: ")
+        if opcion == "1":
+            Escuela.agregar_alumno(datos)
+       
