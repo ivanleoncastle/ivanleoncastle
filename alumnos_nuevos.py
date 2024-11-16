@@ -76,4 +76,17 @@ def main():
         opcion = input("Ingrese una opción: ")
         if opcion == "1":
             Escuela.agregar_alumno(datos)
-       
+        elif opcion == "2":
+            Escuela.mostrar_datos_alumno(datos)
+        elif opcion == "3":
+            Escuela.modificar_datos_alumno(datos)
+        elif opcion == "4":
+            Escuela.expulsar_alumno(datos)
+        elif opcion == "5":
+            break
+        else:
+            print("Opción inválida.")
+
+if __name__ == "__main__":
+    main()
+
