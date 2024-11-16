@@ -1,9 +1,4 @@
-def registro(“Nombre”: nombre de alumno,
-Apellido
-DNI :
-Fecha de nacimiento
-Tutor 
-Notas
-Faltas cantidad de faltas,
-“amonestaciones” : cantidad de amonestaciones)
-    
+def registro(datos):
+     datos={"alumno1, nombre: Jose, apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0, alumno2: nombre: apellido: , DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0, alumno3: nombre:apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0, alumno4: nombre: apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0, alumno5:nombre:apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0,alumno6: nombre: apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0, alumno7: nombre:apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0, alumno8: nombre: apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0, alumno9: nombre:  apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0, alumno10: nombre: apellido: garcia, DNI:34.876.543,fecha de nacimento: 01/04/1986, Nota: 6, faltas:1, amonestaciones: 0"}
+     if datos  in registro:
+         return datos
